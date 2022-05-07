@@ -1,0 +1,172 @@
+{% load static %}
+{% block content %}
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%  static 'css/utils.css'  %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mobile.css' %}">
+    <title>Students Club</title>
+</head>
+
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="{% static '/' %}">
+              <!--  <span><img src="{% static 'img/logo.png' %}" width="94px" alt=""></span> -->
+            </a>
+            <ul>
+                <li><a href="{% static '/' %}">Home</a></li>
+                <li><a href="{% static '#' %}">About</a></li>
+                <li><a href="{% url 'contact' %} ">Contact</a></li>
+            </ul>
+       <!-- </div>
+        <div class="nav-right">
+            <form action="/search.html" method="get">
+                <input class="form-input" type="text" name="query" placeholder="Article Search">
+                <button class="btn">Search</button>
+            </form>
+
+        </div> -->
+
+    </nav>
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="m-auto content max-width-1 my-2">
+        <div class="content-left">
+            <h1>The Students Club</h1>
+            <p style="color:red">The Students Club is a website which lets you submit an article which upon approval will be up on our website and you
+                can get a good amount of reach from here!</p>
+            <p>Students know of upcoming technologies and global updates these days. But not all the students know such things. The Students who have knowledge of these technologies and are willing to share their ideas, experience, or knowledge can share their blogs with us. The best blogs would be displayed here.</p>
+        </div>
+        <div class="content-right">
+            <img src="{% static 'img/home.svg' %}" alt="iBlog">
+        </div>
+    </div>
+
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="home-articles max-width-1 m-auto font2">
+        <h2>Featured Articles</h2>
+        
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="{% static 'img/ex.png' %}"> <!--alt="article"> -->
+            </div>
+            <div class="home-article-content font1">
+                <a href="{% url 'blogpost' %}">
+                    <h3>What is blockchain technology</h3>
+                </a>
+
+                <div>Jateen Tirlotkar</div>
+                <span>17 APril | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="{% static 'img/1.png' %}" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="{% url 'blogpost1' %}">
+                    <h3>Experience the joy of Coding!!</h3>
+                </a>
+
+                <div>Devesh Zope</div>
+                <span>18 April | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="{% static 'img/2.png' %}" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="{% url 'blogpost3' %}">
+                    <h3>Learn Java Programming</h3>
+                </a>
+
+                <div>Sahil</div>
+                <span>07 April | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="{% static 'img/1.png' %}" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="{% url 'blogpost4' %}">
+                    <h3>Crack the coding Interview!</h3>
+                </a>
+
+                <div>Siddhesh</div>
+                <span>17 April | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="{% static 'img/11.svg' %}" alt="article' %}">
+            </div>
+            <div class="home-article-content font1">
+                <a href="{% url 'blogpost' %}">
+                    <h3>How to Start Coding: The Ultimate Guide for Beginner Programmers</h3>
+                </a>
+
+                <div>Jateen</div>
+                <span>07 January | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="{% static 'img/ex.png' %}" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="{% url 'blogpost' %}">
+                    <h3>Top 10 Best Websites to Learn Coding for Free!</h3>
+                </a>
+
+                <div>Devesh</div>
+                <span>20 April | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="{% static 'img/2.png' %}" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="{% url 'blogpost' %}">
+                    <h3>Top Programming Blogs to Improve Your Skills</h3>
+                </a>
+
+                <div>Rahul</div>
+                <span>27 January | 5 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="{% static 'img/11.svg' %}" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="{% url 'blogpost' %}">
+                    <h3>A Step-by-Step Approach to Learn Object Oriented Programming</h3>
+                </a>
+
+                <div>Sahil</div>
+                <span>07 January | 6 min read</span>
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+
+</html>
+
+{% endblock %}

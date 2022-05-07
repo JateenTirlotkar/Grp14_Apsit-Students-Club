@@ -29,7 +29,7 @@ def loginPage(request):
             login(request, user)
             return redirect('home')
         else:
-            messages.error(request, 'Username OR password does not exit')
+            messages.error(request, 'Username OR password does not exist')
 
     context = {'page': page}
     return render(request, 'base/login_register.html', context)
@@ -196,3 +196,24 @@ def topicsPage(request):
 def activityPage(request):
     room_messages = Message.objects.all()
     return render(request, 'base/activity.html', {'room_messages': room_messages})
+ 
+def index(request):
+    return render(request, 'index.html', {})
+
+def contact(request):
+    return render(request, 'contact.html', {})
+
+def game(request):
+    return render(request, 'game.html', {})
+
+def blogpost(request):
+    return render(request, 'blogpost.html', {})
+
+def blogpost1(request):
+    return render(request, 'blogpost1.html', {})
+
+def blogpost3(request):
+    return render(request, 'blogpost3.html', {})
+
+def blogpost4(request):
+    return render(request, 'blogpost4.html', {})

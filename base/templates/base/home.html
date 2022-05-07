@@ -22,7 +22,9 @@
               </path>
             </svg>
             <input name="q" placeholder="Search for posts" />
+            
           </label>
+          
         </form>
         <div class="mobile-menuItems">
           <a class="btn btn--main btn--pill" href="{% url 'topics' %}">Browse Departments</a>
@@ -34,7 +36,9 @@
         <div>
           <h2>Rooms</h2>
           <p>{{room_count}} Rooms available</p>
+          <!--<a href="{% url 'create-room' %}">Create Room</a> -->
         </div>
+        
         
 
          
@@ -50,6 +54,12 @@
 
     <!-- Activities End -->
   </div>
+     
+    <a class="btn btn-primary" href="{% url 'game' %}" role="button">Game</a>
+  
+    <a class="btn btn-primary" href="{% url 'index' %}" role="button">Blog</a>
+  </div>
+
 </main>
 
 {% endblock %}
