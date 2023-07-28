@@ -19,7 +19,7 @@ for different functions emphasis is put on minimizing the information flow betwe
 blocks. Thus, all activities which require more interaction are kept in one block.
 2. Secondary Design Phase:
 In the second phase, the detailed design of every block is performed. The general tasks 
-involved in the design process are the following:
+involved in the design process are the following-
 1. Design various blocks for overall system processes.
 2. Design smaller, compact and workable modules in each block. 
 3. Design various database structures. 
